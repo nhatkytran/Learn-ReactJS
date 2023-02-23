@@ -1,0 +1,29 @@
+S1
+
+5. Critical Questions
+
+--> What's React all about?
+
+--> React does 2 things for us
++ Displays HTML
++ Changes that HTML when the user does something
+--> When using React, at the end of the day, it is still HTML \
+that is causing content to appear on the screen of the user's browser
+--> React as being like a wrapper around HTML of sorts
+--> React using JSX --> HTML
+
+--> React Components?
+
+--> Functions that return JSX (stuff that looks like HTML) --> Tells React what to show on the screen
+--> A project can have many components that work together
+--> Each individual component is in charge of displaying content \
+for a certain portion of the application
+--> Coordinate the flow of information of all components
+
+--> JSX?
+
+--> The stuff that looks like HTML --> Tells React to \
++ Create a normal HTML <div></div>
++ Show another component <Component /> --> Nested Component starts with Capital letter
+--> JSX element starts with lowercase --> HTML element
+--> Starts with uppercase --> Component
