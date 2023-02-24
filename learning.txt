@@ -1,3 +1,5 @@
+Stephen Grider
+
 S1
 
 5. Critical Questions
@@ -10,7 +12,6 @@ S1
 --> When using React, at the end of the day, it is still HTML \
 that is causing content to appear on the screen of the user's browser
 --> React as being like a wrapper around HTML of sorts
---> React using JSX --> HTML
 
 --> React Components?
 
@@ -27,3 +28,30 @@ for a certain portion of the application
 + Show another component <Component /> --> Nested Component starts with Capital letter
 --> JSX element starts with lowercase --> HTML element
 --> Starts with uppercase --> Component
+
+6. More Critical Questions
+
+--> How does a React app start up?
+
+Step 1 --> All of your project's JS files are 'bundled' together into a single file, \
+            then placed onto a server --> bundle.js or App Bundle
+Step 2 --> User makes request to the server and gets an HTML file + the bundle
+Step 3 --> User's browser executes your code
+
+--> Browser executes your code
+
+Step 1 --> Find the div with id of 'root' in the DOM
+const rootElement = document.getElementById('root');
+
+Step 2 --> Tell React to take control of that element
+const root = createRoot(rootElement)
+
+Step 3 --> Tell React to get JSX from the App component, turn it into HTML, and show it in the root
+root.render(<App />)
+
+--> What is the 'useState' functions?
+
+- 'useState' is a function that works with React's 'state' system
+- State is like variable in React
+- State is used to store data that changes over time
+- Whenever state changes, React automatically updates content on the screen
