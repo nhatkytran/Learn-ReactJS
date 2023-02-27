@@ -1,6 +1,4 @@
-Stephen Grider
-
-S1
+--- S1 ---
 
 5. Critical Questions
 
@@ -55,3 +53,34 @@ root.render(<App />)
 - State is like variable in React
 - State is used to store data that changes over time
 - Whenever state changes, React automatically updates content on the screen
+
+8. Creating a React Project
+
+npx create-react-app < name >
+
+9. What is Create React App?
+
+--> JSX files (index.js, App.js, reportWebVitals.js) --> Invalid JS code --> Browser doesn't know how to execute
+            Create React App Dev Server
+JSX files --> Babel --> Webpack --> bundle.js
+
+--> Babel --> Tool to turn JSX into normal JS code
+--> Webpack --> Tool to merge all project files into a single file
+
+--- S2 ---
+
+10. Showing basic content
+
+--> Understand index.js (take a look at ./jxs/index.js)
+
+--> The React library is a library that understands what a component is and it knows \
+how to make multiple components work together to create usable application
+--> The ReactDOM library that knows how to take a set of components, \
+turn them into HTML, and show that on the screen of the browser
+
+--> The React library --> The base library
+--> Goes with different libraries like (ReactDOM) --> show components in different environments
+
+11. What is JSX?
+
+...
