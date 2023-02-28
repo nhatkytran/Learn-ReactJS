@@ -19,6 +19,8 @@ that is causing content to appear on the screen of the user's browser
 for a certain portion of the application
 --> Coordinate the flow of information of all components
 
+--> PureComponent? --> PureComponent is similar to Component but it skips re-renders for same props and state.
+
 --> JSX?
 
 --> The stuff that looks like HTML --> Tells React to \
@@ -67,6 +69,7 @@ JSX files --> Babel --> Webpack --> bundle.js
 --> Babel --> Tool to turn JSX into normal JS code
 --> Webpack --> Tool to merge all project files into a single file
 
+
 --- S2 ---
 
 10. Showing basic content
@@ -79,8 +82,19 @@ how to make multiple components work together to create usable application
 turn them into HTML, and show that on the screen of the browser
 
 --> The React library --> The base library
---> Goes with different libraries like (ReactDOM) --> show components in different environments
+--> Goes with different libraries like (ReactDOM) --> show components on different environments
 
-11. What is JSX?
+11. What is JSX? --> React.createElement
 
-...
+--> JSX is what we write out inside of a component to tell React what we want to show on the screen
+--> <h1>Hi there!</h1> --> Babel --> React.createElement('h1', null, 'Hi there!')
+
+--> babeljs.io/repl
+
+--> Why JSX instead of React.createElement?
+--> Helps our lives as developers a little bit easier --> JSX is easier to understand than React.createElement
+
+--> JSX creates an instruction for React, telling it to make element
+--> We have to return it from a component for React to use it
+
+--> JSX helps Rendering logic go with UI logic
