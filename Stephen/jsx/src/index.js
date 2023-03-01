@@ -7,7 +7,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 // 2. Get a reference to the div with ID root
-// 3, Tell React to take control of that element
+// 3. Tell React to take control of that element
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // 4. Create a component

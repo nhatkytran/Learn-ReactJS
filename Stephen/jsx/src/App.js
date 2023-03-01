@@ -1,10 +1,15 @@
 import React from "react";
 import "./App.css";
 
-console.log(React.createElement("h1", null, "Hi there!"));
-
 function App() {
-  return <h1>Hello beautiful World!</h1>;
+  const name = "Ky";
+  const age = 21;
+
+  return (
+    <h1>
+      My name is {name} and my age is {age}
+    </h1>
+  );
 }
 
 export default App;
