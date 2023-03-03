@@ -44,7 +44,7 @@ Step 1 --> Find the div with id of 'root' in the DOM
 const rootElement = document.getElementById('root');
 
 Step 2 --> Tell React to take control of that element
-const root = createRoot(rootElement)
+const root = ReactDOM.createRoot(rootElement)
 
 Step 3 --> Tell React to get JSX from the App component, turn it into HTML, and show it in the root
 root.render(<App />)
@@ -82,7 +82,7 @@ how to make multiple components work together to create usable application
 turn them into HTML, and show them on the screen of the browser
 
 --> The React library --> The base library
---> Goes with different libraries like (ReactDOM) --> show components on different environments
+--> Goes with different libraries like (ReactDOM) --> show components in different environments
 
 11. What is JSX? --> React.createElement
 
@@ -123,3 +123,47 @@ accept it as arguments, and return it from functions
 
 <h1>{name} {age}</h1>
 <h1>My name is {name} and my age is {age}</h1>
+
+17. Customizing Elements with Props
+
+--> Props --> Customizes an element --> like attributes on HTML
+--> type="number", min={5}
++ Name of the property we want to customize
++ Value for the property
+--> There are very small differences between HTML attributes and JSX props
+
+--> Strings --> Wrap with double quotes
+--> Numbers --> Wrap with curly braces
+--> Arrays, Objects, Variables --> Wrap with curly braces --> {variable}, {[1, 2, 3]}, {{ color: 'red' }}
+
+--> Object
++ Display object --> doesn't work
++ Provide an object as a prop --> OK
+
+ReactDOM.createElement
+const element = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world!'
+  }
+};
+--> These objects are called “React elements”.
+
+--> JSX prevents Injection Attacks --> Prevents XSS (cross-site-scripting)
+--> It's safe to embed user input in JSX
+--> By default, React DOM escapes any values embedded in JSX before rendering them
+& becomes &amp;
+< becomes &lt;
+> becomes &gt;
+--> Everything is converted to a string before being rendered
+
+18. Converting HTML to JSX
+
+--> 5 rules
+--> Rule 1 --> All prop names follow camelCase --> maxlength --> maxLength
+--> Rule 2 --> Number attributes use curly braces
+--> Rule 3 --> Boolean 'true' can be written with just the property name. \
+'false' should be written with curly braces
+--> Rule 4 --> The 'class' attribute is written as 'className'
+--> Rule 5 --> In-line styles are provided as objects
