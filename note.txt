@@ -1,4 +1,4 @@
-Source for leaning
+Sources for leaning
 
 1. Stephen Grider
 2. Documentation

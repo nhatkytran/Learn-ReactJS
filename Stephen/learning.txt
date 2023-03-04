@@ -160,10 +160,16 @@ const element = {
 
 18. Converting HTML to JSX
 
---> 5 rules
+--> 5 rules --> 2 - 2 - 1
 --> Rule 1 --> All prop names follow camelCase --> maxlength --> maxLength
 --> Rule 2 --> Number attributes use curly braces
 --> Rule 3 --> Boolean 'true' can be written with just the property name. \
 'false' should be written with curly braces
---> Rule 4 --> The 'class' attribute is written as 'className'
+--> Rule 4 --> The 'class' attribute is written as 'className' --> JS als has a keyword class --> Avoid confusion
 --> Rule 5 --> In-line styles are provided as objects
+
+19. Applying Styling in JSX --> Using object for In-line styles
+
+20. Extracting Components
+
+21. Module Systems Overview
