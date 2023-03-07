@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 
-function App() {
-  return <h1 data-a={1}>Hello</h1>;
-}
+import Clock from "./Clock";
 
-export const name = "Frlix";
+function App(props) {
+  return <Clock />;
+}
 
 export default App;

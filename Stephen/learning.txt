@@ -173,3 +173,57 @@ const element = {
 20. Extracting Components
 
 21. Module Systems Overview
+
+
+---
+
+1. Rendering Elements
+
+--> JSX --> React element --> An element describes what you want to see on the screen
+--> React element is immutable --> represents the UI at a certain point in time
+--> React only updates what's necessary
+
+2. Components and Props
+
+--> Component accepts a single 'props' object argument with data and returns a React element
+
+--> React elements that represent DOM tags --> const element = <div />;
+--> User-defined components --> const element = <Welcome name="Sara" />;
+
+--> lowercase --> DOM tags
+--> uppercase --> User-defined component
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+--> <Welcome name="Sara" />
+
+--> When React sees an element representing a user-defined component, it passes JSX \
+attributes and children to this component as a single object. We call this object “props”.
+
+--> Props is immutable
+--> Name props from the component's own point of view rather tha the context in which it is being used
+
+--> Pure function --> The function do not attempt to change their inputs, and always return \
+the same result for the same input
+--> All React components must act like pure functions with respect to their props
+
+3. State and Lifecycle
+
+--> useState --> React state system
+--> state is like variable in React --> stores data that changes over time
+--> state changes --> React automatically updates the UI
+
+--> State is similar top props, but it is private and fully controlled by the component --> Encapsulation
+
+--> Lifecycle
++ mounting --> Component is rendered to the DOM for the first time
++ unmounting --> The DOM produced by the Component is removed
+--> Component mounts and unmounts
+
+--> Lifecycle methods: componentDidMount, componentWillUnmount
+
+--> state v/s props
+
+--> state is encapsulated and porps is not --> can not pass state but can pass props
+--> state is mutable is props is immutable

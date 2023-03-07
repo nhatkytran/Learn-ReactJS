@@ -5,9 +5,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-import App, { name as myName } from "./App";
-
-console.log(myName);
+import App from "./App";
 
 // 2. Get a reference to the div with ID root
 // 3. Tell React to take control of that element
@@ -17,7 +15,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // 5. Show the component on the screen
 root.render(
   <React.StrictMode>
-    <App />
+    <App name="nhatkytran">
+      Praise GOD <span>This World is so beautiful!</span>
+    </App>
   </React.StrictMode>
 );
 
