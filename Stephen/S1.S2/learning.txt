@@ -202,7 +202,7 @@ function Welcome(props) {
 attributes and children to this component as a single object. We call this object “props”.
 
 --> Props is immutable
---> Name props from the component's own point of view rather tha the context in which it is being used
+--> Name props from the component's own point of view rather than the context in which it is being used
 
 --> Pure function --> The function do not attempt to change their inputs, and always return \
 the same result for the same input
@@ -225,5 +225,23 @@ the same result for the same input
 
 --> state v/s props
 
---> state is encapsulated and porps is not --> can not pass state but can pass props
+--> state is encapsulated and props is not --> can not pass state but can pass props
 --> state is mutable is props is immutable
+
+--> setState
+
+const [state, setState] = useState(< initial state >); --> if initial state is a funciton --> only called once
+
+--> Actually, setState causes re-render in ReactJS
+
+--> batching --> React batch multiple setState() calls int a single update for performance
+
+--> setState(state + 1) called mulltiple times in one event only updates state one time
+--> use setState((currentState) => < newState >) instead --> support batching --> also fix asynchronous problems
+
+--> State updates are merged
+state => { key1, key2 } --> setState(key1) --> key1 is updated and key2 is intact
+
+--> State is encapsulated --> can not pass state
+--> Pass state as props instead to child components
+--> Also called "top-down" or "undirectional" data flow
