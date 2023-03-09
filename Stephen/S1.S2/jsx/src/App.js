@@ -4,17 +4,11 @@ import "./App.css";
 import About from "./About";
 
 function App(props) {
-  const [state, setState] = useState(() => {
-    console.log("Initial");
-    return 1;
-  });
+  const [state, setState] = useState({ count: 1, fruit: "Banana" });
 
   const handleAdd = () => {
-    // setState(state + 1);
-    // setState(state + 1);
-    // setState(state + 1);
     setState((currentState) => {
-      return currentState + 1;
+      return currentState.count + 1;
     });
   };
 

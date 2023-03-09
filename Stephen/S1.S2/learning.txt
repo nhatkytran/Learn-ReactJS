@@ -225,8 +225,8 @@ the same result for the same input
 
 --> state v/s props
 
---> state is encapsulated and props is not --> can not pass state but can pass props
---> state is mutable is props is immutable
+--> state is encapsulated and props is not --> can not pass state but can pass props or pass state as props
+--> state is mutable and props is immutable --> React Component acts like pure function with respects to their props
 
 --> setState
 
@@ -234,14 +234,18 @@ const [state, setState] = useState(< initial state >); --> if initial state is a
 
 --> Actually, setState causes re-render in ReactJS
 
---> batching --> React batch multiple setState() calls int a single update for performance
+--> batching --> React batch multiple setState() calls in a single update for performance
 
 --> setState(state + 1) called mulltiple times in one event only updates state one time
 --> use setState((currentState) => < newState >) instead --> support batching --> also fix asynchronous problems
 
---> State updates are merged
+--> State updates are merged --> Class components
 state => { key1, key2 } --> setState(key1) --> key1 is updated and key2 is intact
 
+--> Funciton components --> useState --> setState doesn't merge the old and the new state together
+
+--> Data flow
 --> State is encapsulated --> can not pass state
 --> Pass state as props instead to child components
 --> Also called "top-down" or "undirectional" data flow
+--> Parent re-render --> Child re-render
