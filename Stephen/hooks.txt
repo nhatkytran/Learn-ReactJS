@@ -13,7 +13,7 @@
 --> By default, React runs the effects after every render - including the first render
 --> "clean up" function runs when component unmounts, as well as before re-running the effect due to subsequent render
 
---> useState & useEffect --> can be used more than one in a single component
+--> useState & useEffect --> can be used more than once in a single component
 
 --> Rules of Hooks
 --> Hooks are JavaScript function, but they impose 2 additional rules:

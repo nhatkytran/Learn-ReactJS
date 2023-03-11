@@ -1,0 +1,23 @@
+1. Higher-Order Components
+
+--> What is Higher-order function?
+--> In Computer Science, a higher order function that does at least of the following:
++ Takes one or more functions as arguments
++ Returns a function as its result
+
+--> What is HOC (Higher-order component)?
+--> A HOC (Higher-order component) is a function that takes a component and returns a new component
+
+--> Component v/s HOC (Higher-order component)?
+--> Whereas a component transforms props into UI, a higher-order component transforms a component \
+into another component
+
+to be continued...
+
+2. Render props
+
+--> What is "render prop"?
+--> The term "render prop" refers to a technique for sharing code between React components \
+using a prop whose value is a function
+--> A component with a render prop takes a function that returns a React element and calls it \
+instead of implementing its own render logic
