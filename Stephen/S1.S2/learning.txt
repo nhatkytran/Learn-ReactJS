@@ -11,6 +11,8 @@
 that is causing content to appear on the screen of the user's browser
 --> React as being like a wrapper around HTML of sorts
 
+--> React uses Linter plugin to find bugs in the code
+
 --> React Components?
 
 --> Functions that return JSX (stuff that looks like HTML) --> Tells React what to show on the screen
@@ -249,3 +251,37 @@ state => { key1, key2 } --> setState(key1) --> key1 is updated and key2 is intac
 --> Pass state as props instead to child components
 --> Also called "top-down" or "undirectional" data flow
 --> Parent re-render --> Child re-render
+
+4. Handling Events
+
+--> React events are named using camelCase
+--> Pass a function as the event handler in JSX
+
+5. Conditional Rendering
+
+--> In React, create distinct components that encapsulate behavior then render only some of them, \
+depending on the state of the application
+
+6. Lists and Keys
+
+--> Keys --> Help React identify which items have changed, are added, or are removed. Keys should be \
+given to the elements inside the array to give the elements a stable identity
+--> The best way to pick a key is to use a string that uniquely identifies a list item among its siblings (ID)
+--> If don't have stable IDs for rendered items --> use the item index as a key as a last resort --> it may cause some issues
+
+https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
+
+--> E.g. Reat array --> Delete something in the middle and push thing to the array \
+--> index is still the same --> confuses React
+
+--> A good rule of thumb is that element inside the map() call need keys (In case extracting Components with Keys)
+--> Can not read prop.key
+
+7. Forms
+
+--> Controled component
+--> An input form elements whose value is controlled by React is called a "controlled component"
+--> (Form, textarea, select, file input,...)
+
+8. Lifting State Up
+

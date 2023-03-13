@@ -1,22 +1,15 @@
-import { useState } from "react";
 import "./App.css";
 
-import About from "./About";
+import ListItem from "./listItem";
 
-function App(props) {
-  const [state, setState] = useState({ count: 1, fruit: "Banana" });
-
-  const handleAdd = () => {
-    setState((currentState) => {
-      return currentState.count + 1;
-    });
-  };
+function App() {
+  const numbers = [1, 2, 3];
 
   return (
     <div>
-      <h1>{state}</h1>
-      <button onClick={handleAdd}>Add</button>
-      <About />
+      {numbers.map((number, index) => {
+        return <ListItem key={index} number={number} />;
+      })}
     </div>
   );
 }

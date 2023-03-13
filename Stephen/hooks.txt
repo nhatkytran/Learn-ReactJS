@@ -19,3 +19,10 @@
 --> Hooks are JavaScript function, but they impose 2 additional rules:
 + Only call Hooks at the top level --> Don't call Hooks inside loops, conditions or nested functions
 + Only call Hooks from React function components (but you can call Hooks in your own custom Hooks)
+
+--> Building Your Own Hooks
+
+--> Name a custom hook ---> use... --> React linter plugin see the "use" keyword and knows \
+this is a custom hooks
+--> Why we need a Custom Hook --> To reuse some stateful logic between components without adding \
+more components, without render props or higher-order components
