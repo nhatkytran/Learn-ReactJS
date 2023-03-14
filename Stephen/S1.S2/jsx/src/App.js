@@ -1,17 +1,9 @@
 import "./App.css";
 
-import ListItem from "./listItem";
+import Calculator from "./stateUp/Calculator";
 
 function App() {
-  const numbers = [1, 2, 3];
-
-  return (
-    <div>
-      {numbers.map((number, index) => {
-        return <ListItem key={index} number={number} />;
-      })}
-    </div>
-  );
+  return <Calculator />;
 }
 
 export default App;

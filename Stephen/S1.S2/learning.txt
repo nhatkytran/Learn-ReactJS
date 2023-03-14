@@ -285,3 +285,11 @@ https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
 
 8. Lifting State Up
 
+--> In React, sharing state is accomplished by moving it up to the closest \
+common ancestor of the components
+                Ancestor
+    Child Component   Child Component
+--> This is called "lifting state up"
+
+--> Move state form Child Components to Ancestor Component
+--> Ancestor owns the shared state, it becomes "source of truth"
