@@ -293,3 +293,12 @@ common ancestor of the components
 
 --> Move state form Child Components to Ancestor Component
 --> Ancestor owns the shared state, it becomes "source of truth"
+
+9. Composition v/s Inheritance
+
+--> Inheritance --> describes exactly what objects are and how they're related \
+to each other
+--> Composition --> describes what an object can do
+
+10. Thinking in React
+

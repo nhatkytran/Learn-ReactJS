@@ -1,9 +1,14 @@
 import "./App.css";
 
-import Calculator from "./stateUp/Calculator";
+import FilterableProductTable from "./thinkingInReact/FilterableProductTable";
+import data from "./thinkingInReact/data";
 
 function App() {
-  return <Calculator />;
+  return (
+    <div>
+      <FilterableProductTable products={data} />
+    </div>
+  );
 }
 
 export default App;
