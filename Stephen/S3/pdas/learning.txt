@@ -1,0 +1,27 @@
+26. Props System
+
+--> Pass data from a parent to a child
+--> Allows a parent to configure a child differently
+(show different text, different styles,...)
+--> One way flow of data --> Child can't push props back up
+
+34. Including images
+
+--> Import images
+--> Size of image less than 9.7kb --> iamge draw data --> base64
+--> Else --> Separate file
+
+35. Handling Image Accessibility
+
+--> alt prop in image used for some tools such as Screen Reader
+
+36. There are ton of ways to add CSS to our project
+
+--> This lecture shows ways to add CSS
++ CSS Library
++ Write Custom CSS
+
+37. Adding CSS Libraries with NPM
+
+--> npm install bulma
+--> import 'bulma/css/bulma.css';

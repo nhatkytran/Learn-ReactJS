@@ -1,0 +1,14 @@
+--> Synthetic Event
+
+--> Wrapper for Native event of Browser
+--> Created by React
+--> Add more attributes to event
+
+--> const [state, setState] = useState(initialState);
+--> Why setState can change the value of state while we declare state with const
+--> setState only changes value, not reassigns value
+--> const variable --> [ < value > ] (memory)
+
+--> Parent re-render --> All its child re-render
+--> PureComponent --> shouldComponentUpdate --> check props and state --> true or false
+--> Rich Objects or Arrays --> React.memo

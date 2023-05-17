@@ -302,3 +302,5 @@ to each other
 
 10. Thinking in React
 
+--> Yarn (Yet Another Resource Negotiator) v/s npm (Node Package Manager)
+--> Yarn installs Parallel and uses Cache

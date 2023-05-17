@@ -1,12 +1,17 @@
-import "./App.css";
+import './App.css';
 
-import FilterableProductTable from "./thinkingInReact/FilterableProductTable";
-import data from "./thinkingInReact/data";
+function CarList({ cars, children }) {
+  return <ul>{cars.map(children)}</ul>;
+}
 
 function App() {
+  const cars = ['McLaren 765LT', 'BMW I8'];
+
   return (
     <div>
-      <FilterableProductTable products={data} />
+      <CarList cars={cars}>
+        {(car, index) => <li key={index}>{car}</li>}
+      </CarList>
     </div>
   );
 }

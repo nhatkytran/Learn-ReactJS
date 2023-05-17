@@ -1,0 +1,27 @@
++++ useRef +++
+
+const ref = useRef(initialValue);
+
+--> Do not use "ref" during rendering
+---
+function() {
+  // ref.current
+  
+  // <>{ref.current}</>
+}
+---
+
+--> Use "ref" inside callback
+---
+// useEffect(() => {
+  ref.current
+});
+
+// handleFunciton() {
+  ref.currnet
+}
+---
+
+--> React expectation --> Nothing changes if 'props', 'state', 'context' \
+are the same
+--> Future capability
