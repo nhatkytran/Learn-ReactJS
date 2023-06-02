@@ -1,17 +1,15 @@
+import { useBooksContext } from '../hooks';
 import BookShow from './BookShow';
 
-function BookList({ books, onUpdateBook, onDeleteBook }) {
+function BookList() {
   console.log('BookList!');
+
+  const { books } = useBooksContext();
 
   return (
     <div>
       {books.map(book => (
-        <BookShow
-          key={book.id}
-          book={book}
-          onUpdateBook={onUpdateBook}
-          onDeleteBook={onDeleteBook}
-        />
+        <BookShow key={book.id} book={book} />
       ))}
     </div>
   );

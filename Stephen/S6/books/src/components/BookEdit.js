@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function BookEdit({ book, onShowEdit, onUpdateBook }) {
+function BookEdit({ book, onUpdateBook }) {
   console.log('Book Edit!');
 
   const [title, setTitle] = useState(book.title);

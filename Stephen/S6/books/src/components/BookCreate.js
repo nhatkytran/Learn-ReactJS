@@ -1,7 +1,10 @@
 import { useRef, useState } from 'react';
+import { useBooksContext } from '../hooks';
 
-function BookCreate({ onCreateBook }) {
+function BookCreate() {
   console.log('BookCreate!');
+
+  const { handleCreateBook } = useBooksContext();
 
   const [title, setTitle] = useState('');
   const inputRef = useRef();
@@ -9,7 +12,7 @@ function BookCreate({ onCreateBook }) {
   const handleSubmit = event => {
     event.preventDefault();
 
-    onCreateBook(title);
+    handleCreateBook(title);
     setTitle('');
     inputRef.current.focus();
   };
